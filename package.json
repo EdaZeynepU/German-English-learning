@@ -1,5 +1,7 @@
 {
+  "homepage": "http://EdaZeynepU.github.io/German-English-learning/German-English-learning",
   "devDependencies": {
-    "@types/node": "^20.2.1"
+    "@types/node": "^20.2.1",
+    "gh-pages": "^5.0.0"
   }
 }
