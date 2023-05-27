@@ -1,6 +1,4 @@
-// import { useState } from 'react'
 import './App.css'
-import {  } from "@mui/material";
 import { Route,Routes } from "react-router-dom";
 import Home from './components/Home';
 import Flashcards from './components/Flashcards';
@@ -9,9 +7,6 @@ import NotFound from "./components/NotFound";
 import QuestionPage from './components/QuestionPage';
 
 function App() {
-
-
-
 
   return (
     <>
