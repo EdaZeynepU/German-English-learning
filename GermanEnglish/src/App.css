@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --landing-image-width:40%;
+}
+
+.appBar:hover{
+    color: rgb(30, 30, 30);
+    background: rgba(240, 244, 253, 0.5);
+    box-shadow: 0px 0px 10px 10px rgba(240, 244, 253, 0.5);
+    transition-duration: 0.5s;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.btnLink{
+    margin: auto;
+    height: 100px;
+}
+
+.btnInside{
+    height: 120px;
+    width: 150px;
+}
+
+.btnLink:hover{
+    cursor: pointer;
+}
+
+
+/* @keyframes colors{
+    0%{
+        background:linear-gradient(45deg,rgba(41,47,143,1) 0%, rgba(34,164,116,1) 100%);
+    }
+    100%{
+        background:linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%);
+    }
+} */
+
+
+/* Home Page */
+.homePage{
+    /* color: rgb(54, 225, 54); */
+    background:linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%);
+    height: calc(var(--landing-image-width));
+    min-height: 90vh;
+    animation: colors 20s linear infinite;
+}
+
+.landing-image{
+    max-width: 300px;
+    width: var(--landing-image-width);
+    height: auto;
+}
+
+.side-element{
+    width: 90%;
+    margin-top: 15px;
+}
+
+
+.imageWrapper-landing{
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+
+
+
+@keyframes colors{
+    0%{
+        background:rgb(134, 247, 255);
+    }
+    50%{
+        background: rgb(175, 162, 253);
+    }
+    100%{
+        background:rgb(134, 247, 255);
+    }
+}
