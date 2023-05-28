@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import Landing  from "./HomeComponents/Landing";
-import SidePart from './HomeComponents/SidePart';
-import { Box } from '@mui/material';
+import Landing  from "./Landing";
+import SidePart from './SidePart';
 
 import Grid from '@mui/material/Unstable_Grid2';
 

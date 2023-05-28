@@ -1,10 +1,10 @@
 import './App.css'
 import { Route,Routes } from "react-router-dom";
-import Home from './components/Home';
-import Flashcards from './components/Flashcards';
+import Home from './components/HomeComponents/Home';
+import Flashcards from './FlashCardComponents/Flashcards';
 import  AppBar  from "./components/AppBar";
 import NotFound from "./components/NotFound";
-import QuestionPage from './components/QuestionPage';
+import QuestionPage from './components/QuestionPageComponents/QuestionPage';
 
 function App() {
 
