@@ -25,6 +25,7 @@ Make sure you have the following installed on your machine:
 2. Navigate to the project's root directory:
 
    ```
+   cd German-English-learning
    cd GermanEnglish
    ```
 
