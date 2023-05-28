@@ -20,6 +20,7 @@ function SidePart() {
         flexDirection: "column",
       }}
     >
+{/* first card */}
       <Card className="side-element" sx={{ textAlign: "center" }}>
         <CardContent>
           If you want something for fun about language learning you can visit
@@ -29,6 +30,7 @@ function SidePart() {
           <a href="https://www.youtube.com/@LanguageSimp" target="_blank"><Button startIcon={<ArrowRightAltIcon />}>Click Here</Button></a>
         </CardActions>
       </Card>
+{/* second card */}
       <Card className="side-element" sx={{ textAlign: "center" }}>
         <CardContent>
           This website is not enough but wait, there is another website I can recommend... Duolingo! Just one deficiency it punish a lot
@@ -37,6 +39,7 @@ function SidePart() {
           <a href="https://www.duolingo.com/" target="_blank"><Button startIcon={<ArrowRightAltIcon />}>Click Here</Button> </a>
         </CardActions>
       </Card>
+{/* third card */}
       <Card className="side-element" sx={{ textAlign: "center" }}>
         <CardContent>
           Language learning method from a youtuber.
