@@ -18,13 +18,14 @@ Make sure you have the following installed on your machine:
 1. Clone this repository to your local machine using the following command:
 
    ```
-   git clone <repository-url>
+   git clone https://github.com/EdaZeynepU/German-English-learning
+
    ```
 
 2. Navigate to the project's root directory:
 
    ```
-   cd react-project
+   cd GermanEnglish
    ```
 
 3. Install the project dependencies using npm or yarn:
