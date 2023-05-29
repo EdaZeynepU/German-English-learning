@@ -14,15 +14,21 @@
     transition-duration: 0.5s;
 }
 
-.nav-link{
+.menu-item{
+    color: rgb(57, 57, 57);
+    text-decoration: none;
+}
+
+/* .nav-link{
     text-decoration: none;
     color: white;
 }
+*/
 
 .btnLink{
     margin: auto;
     height: 100px;
-}
+} 
 
 .btnInside{
     height: 120px;
@@ -34,20 +40,11 @@
 }
 
 
-/* @keyframes colors{
-    0%{
-        background:linear-gradient(45deg,rgba(41,47,143,1) 0%, rgba(34,164,116,1) 100%);
-    }
-    100%{
-        background:linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%);
-    }
-} */
-
 
 /* Home Page */
 .homePage{
     /* color: rgb(54, 225, 54); */
-    background:linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%);
+    /* background:linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%); */
     height: calc(var(--landing-image-width));
     min-height: 90vh;
     animation: colors 20s linear infinite;
@@ -75,15 +72,38 @@
 
 
 
-
+/* 
 @keyframes colors{
     0%{
-        background:rgb(134, 247, 255);
+        background:rgb(165, 249, 255);
     }
     50%{
-        background: rgb(175, 162, 253);
+        background: rgb(203, 194, 255);
     }
     100%{
-        background:rgb(134, 247, 255);
-    }
+        background:rgb(173, 250, 255);
+    } */
+
+    @keyframes colors{
+        0%{
+            background:rgb(134, 247, 255,0.7);
+        }
+        50%{
+            background: rgba(171, 157, 251, 0.856);
+        }
+        100%{
+            background:rgb(134, 247, 255,0.7);
+        }
+ 
+    /* old ones */
+    /* @keyframes colors{
+        0%{
+            background:rgb(134, 247, 255);
+        }
+        50%{
+            background: rgb(175, 162, 253);
+        }
+        100%{
+            background:rgb(134, 247, 255);
+        } */
 }
