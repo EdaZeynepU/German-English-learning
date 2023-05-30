@@ -26,7 +26,7 @@ const AFlashcard: React.FC<AFlashcardProps> = ({ img, eng, ger }) => {
   };
 
   return (
-    <Card sx={{ width: 350 }}>
+    <Card sx={{ width: 330 }}>
 
 {/* Cards photo part */}
       <CardMedia

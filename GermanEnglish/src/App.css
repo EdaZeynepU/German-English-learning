@@ -71,6 +71,18 @@
 }
 
 
+.css-1nuw9uu-MuiGrid-root{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.btn-category{
+    /* background-color: rgb(60, 60, 60) !important; */
+    width: 210px;
+    height: 70px;
+    margin: 15px !important;
+}
 
 /* 
 @keyframes colors{
