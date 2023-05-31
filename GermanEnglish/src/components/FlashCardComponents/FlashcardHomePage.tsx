@@ -23,7 +23,7 @@ function FlashcardHomePage() {
         <Button variant='contained' className='btn-category' onClick={()=>{setCategory("partsOfTheHouse")}}>
             Parts Of The House
         </Button> 
-        <Button variant='contained' className='btn-category' disabled onClick={()=>{setCategory("foods")}}>
+        <Button variant='contained' className='btn-category' onClick={()=>{setCategory("foods")}}>
             Foods
         </Button>
         <Button variant='contained' className='btn-category' disabled onClick={()=>{setCategory("animals")}}>

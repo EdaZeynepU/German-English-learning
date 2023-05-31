@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AFlashcard from "./AFlashcard";
-import {
-  Button,
-  Grid,
-  Typography,
-  Stack
-} from "@mui/material";
+import { Button, Grid, Typography, Stack } from "@mui/material";
 import HomeIcon from "@mui/icons-material/Home";
 import QuizIcon from "@mui/icons-material/Quiz";
 import { Link } from "react-router-dom";
@@ -108,41 +103,126 @@ const imagePaths: {
       eng: "white",
     },
   ],
-  partsOfTheHouse:[
+  partsOfTheHouse: [
     {
       path: "../images/house.jpg",
       ger: "das Haus",
       eng: "house",
-    },{
+    },
+    {
       path: "../images/bedroom.jpg",
       ger: "das Schlafzimmer",
       eng: "bedroom",
-    },{
+    },
+    {
       path: "../images/bathroom.jpg",
       ger: "das Badezimmer",
       eng: "bathroom",
-    },{
+    },
+    {
       path: "../images/kitchen.jpg",
       ger: "die Küche",
       eng: "kitchen",
-    },{
+    },
+    {
       path: "../images/garden.jpg",
       ger: "der Garten",
       eng: "garden",
-    },{
+    },
+    {
       path: "../images/room.jpg",
-      ger:"das Zimmer",
+      ger: "das Zimmer",
       eng: "room",
-    },{
+    },
+    {
       path: "../images/stairs.jpg",
-      ger:"die Treppeder",
+      ger: "die Treppeder",
       eng: "stairs",
-    },{
+    },
+    {
       path: "../images/basement.jpg",
-      ger:"der Keller",
+      ger: "der Keller",
       eng: "basement",
     },
-  ]
+    {
+      path: "../images/basement.jpg",
+      ger: "der Tish",
+      eng: "table",
+    },
+  ],
+  foods: [
+    {
+      path: "../images/bread.jpg",
+      ger: "das Brot",
+      eng: "bread",
+    },
+    {
+      path: "../images/salt.jpg",
+      ger: "das Salz",
+      eng: "salt",
+    },
+    {
+      path: "../images/ice.jpg",
+      ger: "das Eis",
+      eng: "ice",
+    },
+    {
+      path: "../images/oil.jpg",
+      ger: "das Öl",
+      eng: "oil",
+    },
+    {
+      path: "../images/sugar.jpg",
+      ger: "der Zucker",
+      eng: "sugar",
+    },
+    {
+      path: "../images/butter.jpg",
+      ger: "die Butter",
+      eng: "butter",
+    },
+    {
+      path: "../images/cheese.jpg",
+      ger: "cheese",
+      eng: "der Käse",
+    },
+    {
+      path: "../images/salad.jpg",
+      ger: "der Salat",
+      eng: "salad",
+    },
+    {
+      path: "../images/soup.jpg",
+      ger: "die Suppe",
+      eng: "soup",
+    },
+    {
+      path: "../images/breakfast.jpg",
+      ger: "das Frühstück",
+      eng: "breakfast",
+    },
+    {
+      path: "../images/lunch.jpg",
+      ger: "das Mittagessen",
+      eng: "lunch",
+    },
+    {
+      path: "../images/dinner.jpg",
+      ger: "das Abendessen",
+      eng: "dinner",
+    },
+  ],
+  animals:[
+    {
+      path: "../images/basement.jpg",
+      ger: "der Fisch",
+      eng: "fish",
+    },
+    {
+      path: "../images/basement.jpg",
+      ger: "das Huhn",
+      eng: "chicken",
+    },]
 };
 
 interface FLashCardsprops {
@@ -188,8 +268,8 @@ const Flashcards: React.FC<FLashCardsprops> = ({ team }) => {
       container
       spacing={1}
       sx={{
-        width:"95vw",
-        margin: "10px auto"
+        width: "95vw",
+        margin: "10px auto",
       }}
     >
       {
@@ -200,17 +280,24 @@ const Flashcards: React.FC<FLashCardsprops> = ({ team }) => {
           </Typography>
         ) : (
           <Grid
-          item
-          container
-          sx={{
-            margin:"40px",
-            marginTop: "10px",
-            marginBottom: "10px",
-          }}
-        >
+            item
+            container
+            sx={{
+              margin: "40px",
+              marginTop: "10px",
+              marginBottom: "10px",
+            }}
+          >
             <Grid container item spacing={5}>
               {images.map((image, index) => (
-                <Grid xs={12} md={4} key={index} container item justifyContent="center" >
+                <Grid
+                  xs={12}
+                  md={4}
+                  key={index}
+                  container
+                  item
+                  justifyContent="center"
+                >
                   <AFlashcard
                     key={index}
                     img={image}
@@ -223,40 +310,45 @@ const Flashcards: React.FC<FLashCardsprops> = ({ team }) => {
               {
                 //show buttons 1 seconds after importing images (preventing the mess)
                 showButtons ? (
-                <Grid key={99} xs={12} md={4} item justifyContent="center" >
+                  <Grid key={99} xs={12} md={4} item justifyContent="center">
                     {/* Link to Quiz */}
-                    <Stack sx={{height:"350px",marginTop:"auto",marginBottom:"auto"}}>
+                    <Stack
+                      sx={{
+                        height: "350px",
+                        marginTop: "auto",
+                        marginBottom: "auto",
+                      }}
+                    >
                       <Link to="/questions" className="btnLink">
-                      <Button
-                        variant="contained"
-                        color="primary"
-                        className="btnInside"
-                        startIcon={<QuizIcon />}
-                        sx={{margin:"10px"}}
-                      >
-                        Quizz
-                      </Button>
-                    </Link>
-                    {/* Link to Home */}
-                    <Link to="/" className="btnLink">
-                      <Button
-                        variant="contained"
-                        className="btnInside"
-                        startIcon={<HomeIcon />}
-                        sx={{margin:"10px"}}
-                      >
-                        Home
-                      </Button>
-                    </Link>
+                        <Button
+                          variant="contained"
+                          color="primary"
+                          className="btnInside"
+                          startIcon={<QuizIcon />}
+                          sx={{ margin: "10px" }}
+                        >
+                          Quizz
+                        </Button>
+                      </Link>
+                      {/* Link to Home */}
+                      <Link to="/" className="btnLink">
+                        <Button
+                          variant="contained"
+                          className="btnInside"
+                          startIcon={<HomeIcon />}
+                          sx={{ margin: "10px" }}
+                        >
+                          Home
+                        </Button>
+                      </Link>
                     </Stack>
-                    
-                </Grid>
+                  </Grid>
                 ) : (
                   <></>
                 )
               }
             </Grid>
-         </Grid>
+          </Grid>
         )
       }
     </Grid>

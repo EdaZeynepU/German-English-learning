@@ -7,23 +7,10 @@
     --landing-image-width:40%;
 }
 
-.appBar:hover{
-    color: rgb(30, 30, 30);
-    background: rgba(240, 244, 253, 0.5);
-    box-shadow: 0px 0px 10px 10px rgba(240, 244, 253, 0.5);
-    transition-duration: 0.5s;
-}
-
 .menu-item{
     color: rgb(57, 57, 57);
     text-decoration: none;
 }
-
-/* .nav-link{
-    text-decoration: none;
-    color: white;
-}
-*/
 
 .btnLink{
     margin: auto;
@@ -39,12 +26,8 @@
     cursor: pointer;
 }
 
-
-
 /* Home Page */
 .homePage{
-    /* color: rgb(54, 225, 54); */
-    /* background:linear-gradient(45deg, rgba(34,164,116,1) 0%, rgba(41,47,143,1) 100%); */
     height: calc(var(--landing-image-width));
     min-height: 90vh;
     animation: colors 20s linear infinite;
@@ -78,7 +61,6 @@
     margin-bottom: 50px;
 }
 .btn-category{
-    /* background-color: rgb(60, 60, 60) !important; */
     width: 210px;
     height: 70px;
     margin: 15px !important;
