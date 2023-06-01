@@ -5,6 +5,7 @@ import  ResponsiveAppBar  from "./components/AppBar";
 import NotFound from "./components/NotFound";
 import QuestionPage from './components/QuestionPageComponents/QuestionPage';
 import FlashcardHomePage from "./components/FlashCardComponents/FlashcardHomePage";
+import Contact from "./Contact";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/flashcards" element={<FlashcardHomePage/>} />
         <Route path="/questions" element={<QuestionPage/>} />
+        <Route path="/contact" element={<Contact/>} />
         <Route path="*" element={<NotFound/>} /> {/* if there is no such a path */}
       </Routes>
     </>
