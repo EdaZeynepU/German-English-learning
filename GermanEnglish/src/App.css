@@ -29,7 +29,7 @@
 /* Home Page */
 .homePage{
     height: calc(var(--landing-image-width));
-    min-height: 90vh;
+    min-height: 92vh;
     animation: colors 20s linear infinite;
 }
 

@@ -1,0 +1,275 @@
+{
+    "imagePaths": {
+      "drinks": [
+        {
+          "path": "../images/Coffee.jpg",
+          "ger": "Kaffee",
+          "eng": "Coffee"
+        },
+        {
+          "path": "../images/Tea.jpg",
+          "ger": "Tee",
+          "eng": "Tea"
+        },
+        {
+          "path": "../images/Beer.jpg",
+          "ger": "das Bier",
+          "eng": "Beer"
+        },
+        {
+          "path": "../images/Milk.jpg",
+          "ger": "die Milch",
+          "eng": "Milk"
+        },
+        {
+          "path": "../images/FruitJuice.jpg",
+          "ger": "der Fruchtsaft",
+          "eng": "Fruit juice"
+        },
+        {
+          "path": "../images/Water.jpg",
+          "ger": "das Wasser",
+          "eng": "water"
+        },
+        {
+          "path": "../images/Wine.jpg",
+          "ger": "Wein",
+          "eng": "Wine"
+        }
+      ],
+      "colors": [
+        {
+          "path": "../images/Red.jpg",
+          "ger": "das rot",
+          "eng": "red"
+        },
+        {
+          "path": "../images/pink.jpg",
+          "ger": "Rosa",
+          "eng": "pink"
+        },
+        {
+          "path": "../images/brown.jpg",
+          "ger": "Braun",
+          "eng": "brown"
+        },
+        {
+          "path": "../images/orange.jpg",
+          "ger": "Orange ",
+          "eng": "orange"
+        },
+        {
+          "path": "../images/yellow.jpg",
+          "ger": "Gelb",
+          "eng": "yellow"
+        },
+        {
+          "path": "../images/blue.jpg",
+          "ger": "Blau",
+          "eng": "blue"
+        },
+        {
+          "path": "../images/purple.jpg",
+          "ger": "Violett",
+          "eng": "purple"
+        },
+        {
+          "path": "../images/green.jpg",
+          "ger": "Grün",
+          "eng": "green"
+        },
+        {
+          "path": "../images/black.jpg",
+          "ger": "Schwarz",
+          "eng": "black"
+        },
+        {
+          "path": "../images/gray.jpg",
+          "ger": "das grau",
+          "eng": "gray"
+        },
+        {
+          "path": "../images/white.jpg",
+          "ger": "Weiß",
+          "eng": "white"
+        }
+      ],
+      "partsOfTheHouse": [
+        {
+          "path": "../images/house.jpg",
+          "ger": "das Haus",
+          "eng": "house"
+        },
+        {
+          "path": "../images/bedroom.jpg",
+          "ger": "das Schlafzimmer",
+          "eng": "bedroom"
+        },
+        {
+          "path": "../images/bathroom.jpg",
+          "ger": "das Badezimmer",
+          "eng": "bathroom"
+        },
+        {
+          "path": "../images/kitchen.jpg",
+          "ger": "die Küche",
+          "eng": "kitchen"
+        },
+        {
+          "path": "../images/garden.jpg",
+          "ger": "der Garten",
+          "eng": "garden"
+        },
+        {
+          "path": "../images/room.jpg",
+          "ger": "das Zimmer",
+          "eng": "room"
+        },
+        {
+          "path": "../images/stairs.jpg",
+          "ger": "die Treppeder",
+          "eng": "stairs"
+        },
+        {
+          "path": "../images/basement.jpg",
+          "ger": "der Keller",
+          "eng": "basement"
+        },
+        {
+          "path": "../images/basement.jpg",
+          "ger": "der Tish",
+          "eng": "table"
+        }
+      ],
+      "foods": [
+        {
+          "path": "../images/bread.jpg",
+          "ger": "das Brot",
+          "eng": "bread"
+        },
+        {
+          "path": "../images/salt.jpg",
+          "ger": "das Salz",
+          "eng": "salt"
+        },
+        {
+          "path": "../images/ice.jpg",
+          "ger": "das Eis",
+          "eng": "ice"
+        },
+        {
+          "path": "../images/oil.jpg",
+          "ger": "das Öl",
+          "eng": "oil"
+        },
+        {
+          "path": "../images/sugar.jpg",
+          "ger": "der Zucker",
+          "eng": "sugar"
+        },
+        {
+          "path": "../images/butter.jpg",
+          "ger": "die Butter",
+          "eng": "butter"
+        },
+        {
+          "path": "../images/cheese.jpg",
+          "ger": "cheese",
+          "eng": "der Käse"
+        },
+        {
+          "path": "../images/salad.jpg",
+          "ger": "der Salat",
+          "eng": "salad"
+        },
+        {
+          "path": "../images/soup.jpg",
+          "ger": "die Suppe",
+          "eng": "soup"
+        },
+        {
+          "path": "../images/breakfast.jpg",
+          "ger": "das Frühstück",
+          "eng": "breakfast"
+        },
+        {
+          "path": "../images/lunch.jpg",
+          "ger": "das Mittagessen",
+          "eng": "lunch"
+        },
+        {
+          "path": "../images/dinner.jpg",
+          "ger": "das Abendessen",
+          "eng": "dinner"
+        }
+      ],
+      "animals": [
+        {
+          "path": "../images/dog.jpg",
+          "ger": "der Hund",
+          "eng": "dog"
+        },
+        {
+          "path": "../images/cat.jpg",
+          "ger": "die Katze",
+          "eng": "cat"
+        },
+        {
+          "path": "../images/fish.jpg",
+          "ger": "der Fisch",
+          "eng": "fish"
+        },
+        {
+          "path": "../images/snake.jpg",
+          "ger": "die Schlanfe",
+          "eng": "snake"
+        },
+        {
+          "path": "../images/bird.jpg",
+          "ger": "der Vogel",
+          "eng": "bird"
+        },
+        {
+          "path": "../images/horse.jpg",
+          "ger": "das Pferd",
+          "eng": "horse"
+        },
+        {
+          "path": "../images/mouse.jpg",
+          "ger": "die Maus",
+          "eng": "mouse"
+        },
+        {
+          "path": "../images/bear.jpg",
+          "ger": "der Bär",
+          "eng": "bear"
+        },
+        {
+          "path": "../images/turtle.jpg",
+          "ger": "die Schildkörte",
+          "eng": "turtle"
+        },
+        {
+          "path": "../images/sheep.jpg",
+          "ger": "das Schaf",
+          "eng": "sheep"
+        },
+        {
+          "path": "../images/pig.jpg",
+          "ger": "das Schwein",
+          "eng": "pig"
+        },
+        {
+          "path": "../images/hamster.jpg",
+          "ger": "der Hamster",
+          "eng": "hamster"
+        },
+        {
+          "path": "../images/chicken.jpg",
+          "ger": "das Huhn",
+          "eng": "chicken"
+        }
+      ]
+    }
+  }
+  

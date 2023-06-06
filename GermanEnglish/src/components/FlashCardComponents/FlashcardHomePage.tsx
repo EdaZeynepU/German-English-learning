@@ -10,7 +10,7 @@ function FlashcardHomePage() {
 
         {
             category.length==0? ( <Grid container justifyContent="center" >
-                <Grid xs={12}>
+                <Grid item sx={{marginTop:"40px",marginBottom:"40px",display:"flex",justifyContent:"center"}} xs={12}>
                 <Typography component="div" variant='h3'>Choose your Category</Typography>
                     </Grid>
         <Box sx={{display:"flex",flexWrap:"wrap",width:"95vw",justifyContent:"center"}}>
@@ -26,7 +26,7 @@ function FlashcardHomePage() {
         <Button variant='contained' className='btn-category' onClick={()=>{setCategory("foods")}}>
             Foods
         </Button>
-        <Button variant='contained' className='btn-category' disabled onClick={()=>{setCategory("animals")}}>
+        <Button variant='contained' className='btn-category' onClick={()=>{setCategory("animals")}}>
             Animals
         </Button>
         <Button variant='contained' className='btn-category' disabled onClick={()=>{setCategory("numbers")}}>

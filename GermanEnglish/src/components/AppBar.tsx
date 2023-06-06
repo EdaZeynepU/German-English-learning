@@ -9,10 +9,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
-import PublicIcon from "@mui/icons-material/Public";
-
 import { NavLink } from "react-router-dom";
 import { Divider, MenuItem } from "@mui/material";
+
+import logo from "./logo3.png";
 
 function ResponsiveAppBar() {
   //sets dropdown
@@ -32,12 +32,6 @@ function ResponsiveAppBar() {
     <AppBar position="static" sx={{ background: "gray" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <PublicIcon
-            sx={{
-              display: { xs: "none", md: "flex", marginLeft: "4%" },
-              mr: 1,
-            }}
-          />
           <Typography
             variant="h6"
             noWrap
@@ -46,14 +40,11 @@ function ResponsiveAppBar() {
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
+              flexGrow: 1,
               letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
             }}
           >
-            Ger-Eng
+            <img src={logo} alt="Ger-Eng" height={50}/>
           </Typography>
 
           {/* dropdown menu controller */}
@@ -107,7 +98,6 @@ function ResponsiveAppBar() {
             </Menu>
           </Box>
           {/* dropdown Menu finishes here */}
-          <PublicIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -117,14 +107,10 @@ function ResponsiveAppBar() {
               mr: 2,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
             }}
           >
-            Ger-Eng
+            <img src={logo} alt="Ger-Eng" height={50}/>
           </Typography>
           {/* md size screen navbar starts */}
           <Box
