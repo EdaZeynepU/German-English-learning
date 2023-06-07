@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Box, Button, Grid, Typography } from "@mui/material";
-import Flashcards from './Flashcards';
+import QuestionPage from './QuestionPage';
 
 function FlashcardHomePage() {
 
@@ -11,7 +11,7 @@ function FlashcardHomePage() {
         {
             category.length==0? ( <Grid container justifyContent="center" >
                 <Grid item sx={{marginTop:"40px",marginBottom:"40px",display:"flex",justifyContent:"center"}} xs={12}>
-                <Typography component="div" variant='h3'>Choose a category for the flashcards:</Typography>
+                <Typography component="div" variant='h3'>Choose a category to start the quiz:</Typography>
                     </Grid>
         <Box sx={{display:"flex",flexWrap:"wrap",width:"95vw",justifyContent:"center"}}>
             <Button variant='contained' className='btn-category' onClick={()=>{setCategory("colors")}}>
@@ -40,7 +40,7 @@ function FlashcardHomePage() {
         </Button>
         </Box>
         
-        </Grid>):<Flashcards team={category}/>
+        </Grid>):<QuestionPage team={category}/>
         
         }
         

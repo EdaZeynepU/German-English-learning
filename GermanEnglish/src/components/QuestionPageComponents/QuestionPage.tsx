@@ -1,8 +1,12 @@
 import { Button, Stack } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Questions from "./Questions";
+import Questions from "./AQuestion";
 
-function QuestionPage() {
+interface questionProps{
+  team:string,
+}
+
+const QuestionPage: React.FC<questionProps> = ({team})=> {
   const [isStarted, setIsStarted] = useState(false); //is game started
 
   useEffect(() => {
@@ -20,7 +24,7 @@ function QuestionPage() {
     >
       {
         isStarted ? (//it's true then give questions
-          <Questions />
+          <Questions category={team} />
         ) : (//it's false then give the start button
           <Button
             onClick={() => {

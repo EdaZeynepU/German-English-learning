@@ -10,29 +10,29 @@ interface QuestionProps {
 }
 
 const Question: React.FC<QuestionProps> = ({ answer, question, fullAnswers }) => {
-  const [color, setColor] = useState('');
+  const [isColorGreen, setIsColorGreen] = useState<boolean>(false);
 
-//set the color to green if the answer is true
+//set the isColorGreen to green if the answer is true
   function answerCheck(selectedAnswer: String): void {
     if (selectedAnswer === answer) {
-      setColor('rgb(54, 225, 54)');
+      setIsColorGreen(true);
     } else {
-      setColor('error');
+      setIsColorGreen(false);
     }
     
   }
 
   return (
-    <Grid xs={5} md={3} >
-      <Paper elevation={2} sx={{ width: '250px',padding:"20px", textAlign: 'center'}}>
+    <Grid>
+      <Paper elevation={2} sx={{ width: '300px',padding:"20px", textAlign: 'center'}}>
 {/* question */}
-        <Typography component="div" variant="h6" sx={{color:color,padding:"0px"}}>
+        <Typography component="div" variant="h6">
           What is {question}?
         </Typography>
 {/* if choosen button is true then set variant the contained to express the answer */}
-        <Button variant={color == 'rgb(54, 225, 54)' && fullAnswers[0]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[0])}>{fullAnswers[0]}</Button>
-        <Button variant={color == 'rgb(54, 225, 54)' && fullAnswers[1]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[1])}>{fullAnswers[1]}</Button>
-        <Button variant={color == 'rgb(54, 225, 54)' && fullAnswers[2]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[2])}>{fullAnswers[2]}</Button>
+        <Button color={isColorGreen==true? "success":"primary"} variant={isColorGreen == true && fullAnswers[0]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[0])}>{fullAnswers[0]}</Button>
+        <Button color={isColorGreen==true? "success":"primary"} variant={isColorGreen == true && fullAnswers[1]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[1])}>{fullAnswers[1]}</Button>
+        <Button color={isColorGreen==true? "success":"primary"} variant={isColorGreen == true && fullAnswers[2]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[2])}>{fullAnswers[2]}</Button>
       </Paper>
     </Grid>
   );
