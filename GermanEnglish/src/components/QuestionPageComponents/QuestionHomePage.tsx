@@ -14,28 +14,28 @@ function FlashcardHomePage() {
                 <Typography component="div" variant='h3'>Choose a category to start the quiz:</Typography>
                     </Grid>
         <Box sx={{display:"flex",flexWrap:"wrap",width:"95vw",justifyContent:"center"}}>
-            <Button variant='contained' className='btn-category' onClick={()=>{setCategory("colors")}}>
+            <Button color='secondary' variant='contained' className='btn-category' onClick={()=>{setCategory("colors")}}>
             Colors
         </Button>
-        <Button variant='contained' className='btn-category' onClick={()=>{setCategory("drinks")}}>
+        <Button color='secondary' variant='contained' className='btn-category' onClick={()=>{setCategory("drinks")}}>
             Drinks
         </Button> 
-        <Button variant='contained' className='btn-category' onClick={()=>{setCategory("partsOfTheHouse")}}>
+        <Button color='secondary' variant='contained' className='btn-category' onClick={()=>{setCategory("partsOfTheHouse")}}>
             Parts Of The House
         </Button> 
-        <Button variant='contained' className='btn-category' onClick={()=>{setCategory("foods")}}>
+        <Button color='secondary' variant='contained' className='btn-category' onClick={()=>{setCategory("foods")}}>
             Foods
         </Button>
-        <Button variant='contained' className='btn-category' onClick={()=>{setCategory("animals")}}>
+        <Button color='secondary' variant='contained' className='btn-category' onClick={()=>{setCategory("animals")}}>
             Animals
         </Button>
-        <Button variant='contained' className='btn-category' disabled onClick={()=>{setCategory("numbers")}}>
+        <Button color='secondary' variant='contained' className='btn-category' disabled onClick={()=>{setCategory("numbers")}}>
             Numbers
         </Button>
-        <Button variant='contained' className='btn-category' disabled onClick={()=>{setCategory("family")}}>
+        <Button color='secondary' variant='contained' className='btn-category' disabled onClick={()=>{setCategory("family")}}>
             Family
         </Button>
-        <Button variant='contained' className='btn-category' disabled onClick={()=>{setCategory("countries")}}>
+        <Button color='secondary' variant='contained' className='btn-category' disabled onClick={()=>{setCategory("countries")}}>
             Countries
         </Button>
         </Box>

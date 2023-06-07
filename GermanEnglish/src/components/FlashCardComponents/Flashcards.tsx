@@ -5,6 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import QuizIcon from "@mui/icons-material/Quiz";
 import { Link } from "react-router-dom";
 import x from "../../../api/Words.json";
+import ArrowBack from "@mui/icons-material/ArrowBack";
 
 //imagePaths -> keys:string -> index:int -> path,ger,eng (string type)
 const imagePaths: {
@@ -19,6 +20,10 @@ const Flashcards: React.FC<FLashCardsprops> = ({ team }) => {
   const [images, setImages] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showButtons, setShowButtons] = useState(false);
+
+const goBack=()=>{
+  window.location.reload();
+}
 
   //making isLoading true after importing images
   useEffect(() => {
@@ -128,15 +133,17 @@ const Flashcards: React.FC<FLashCardsprops> = ({ team }) => {
                         </Button>
                       </Link>
                     </Stack>
-                  </Grid>
+                  </Grid> 
                 ) : (
                   <></>
                 )
               }
             </Grid>
+          
           </Grid>
         )
       }
+       {showButtons? <Button color="primary" onClick={goBack} className="goBackBtn" startIcon={<ArrowBack/>} sx={{backgroundColor:"rgb(360,360,360,0.9)"}} >Back</Button>:<></>}
     </Grid>
   );
 };

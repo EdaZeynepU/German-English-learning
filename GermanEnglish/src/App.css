@@ -26,6 +26,22 @@
     cursor: pointer;
 }
 
+/* question page home and flashcards buttons and goBack button */
+.btnInsideQuiz{
+    width: 150px;
+    height: 100px;
+}
+.btnLinkQuiz{
+    width: 100px;
+}
+
+.goBackBtn{
+    position: sticky !important;
+    bottom: 0;
+    right: 0;
+    width: 70px;
+}
+
 /* Home Page */
 .homePage{
     height: calc(var(--landing-image-width));

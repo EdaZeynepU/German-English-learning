@@ -1,64 +1,41 @@
-import React, { useEffect, useState } from "react";
-import Question from "./Question";
-import Grid from "@mui/material/Unstable_Grid2";
-import x from "../../../api/Words.json";
+import React, { useState } from 'react';
+import { Button, Paper, Typography } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2';
 
-interface teamInterface {
-  path: string;
-  ger: string;
-  eng: string;
-}
-interface QuestionProps{
-    category:string;
+//set interface to take props
+interface QuestionProps {
+  answer: String;
+  question: String;
+  fullAnswers: String[];
 }
 
-const imagePaths: {
-    [key: string]: { path: string; ger: string; eng: string }[];
-  }= x.imagePaths;
+const Question: React.FC<QuestionProps> = ({ answer, question, fullAnswers }) => {
+  const [isColorGreen, setIsColorGreen] = useState<boolean>(false);
 
-const Questions: React.FC<QuestionProps> = ({category}) => {
-  //   const [options] = useState(Array.from(fruitMap.options())); // options from map
-  const [team, setTeam] = useState<teamInterface[]>([]);
-  const [options, setOptions] = useState<string[]>([]);
-
-  useEffect(() => {
-    const choosenTeam=imagePaths[category];
-    setTeam(choosenTeam);
-    const choosenOptions = choosenTeam.map((word) => word.eng);
-    setOptions(choosenOptions);
-    console.log("say hi");
-    
-  },[]);
-
-  const getRandomStrings = (answer: String): String[] => {
-    const randomStrings: String[] = [];
-
-    // random number from 0 to maps size-1
-    const x = Math.floor(Math.random() * options.length);
-
-    // Add random strings to the array
-    randomStrings.push(options[x]);
-    randomStrings.push(options[(x + 2) % options.length]);
-    randomStrings.push(options[(x + 4) % options.length]);
-    // If there isn't answer among random options then ad it randomly
-    if (randomStrings.indexOf(answer) == -1) {
-      randomStrings[x % 3] = answer;
+//set the isColorGreen to green if the answer is true
+  function answerCheck(selectedAnswer: String): void {
+    if (selectedAnswer === answer) {
+      setIsColorGreen(true);
+    } else {
+      setIsColorGreen(false);
     }
-    return randomStrings;
-  };
+    
+  }
 
   return (
-    <Grid container xs={12} gap={3} sx={{ justifyContent: "center", }}>
-      {team.map((word, index) => (
-        <Question
-          key={index}
-          answer={word.ger}
-          question={word.eng}
-          fullAnswers={getRandomStrings(word.ger)}
-        />
-      ))}
+    <Grid>
+      <Paper elevation={2} sx={{ width: '300px',padding:"20px", textAlign: 'center'}}>
+{/* question */}
+        <Typography component="div" variant="h6">
+          What is {question}?
+        </Typography>
+{/* if choosen button is true then set variant the contained to express the answer */}
+        <Button color={isColorGreen==true? "success":"primary"} variant={isColorGreen == true && fullAnswers[0]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[0])}>{fullAnswers[0]}</Button>
+        <Button color={isColorGreen==true? "success":"primary"} variant={isColorGreen == true && fullAnswers[1]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[1])}>{fullAnswers[1]}</Button>
+        <Button color={isColorGreen==true? "success":"primary"} variant={isColorGreen == true && fullAnswers[2]==answer ? 'contained' : 'outlined'} onClick={() => answerCheck(fullAnswers[2])}>{fullAnswers[2]}</Button>
+      </Paper>
     </Grid>
   );
-};
+}
 
-export default Questions;
+export default Question;

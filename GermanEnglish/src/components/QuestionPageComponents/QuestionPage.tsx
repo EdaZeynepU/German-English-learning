@@ -1,6 +1,8 @@
 import { Button, Stack } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import Questions from "./AQuestion";
+import Questions from "./Questions";
+import ArrowBack from "@mui/icons-material/ArrowBack";
+
 
 interface questionProps{
   team:string,
@@ -14,6 +16,11 @@ const QuestionPage: React.FC<questionProps> = ({team})=> {
     //And any time isStarted changes
   }, [isStarted]);
 
+
+  const goBack=()=>{
+    window.location.reload();
+  }
+
   return (
     <Stack
       sx={{
@@ -24,14 +31,19 @@ const QuestionPage: React.FC<questionProps> = ({team})=> {
     >
       {
         isStarted ? (//it's true then give questions
-          <Questions category={team} />
+          <><Questions category={team} />
+          <Button color="secondary" onClick={goBack} className="goBackBtn" startIcon={<ArrowBack/>} >Back</Button>
+          </>
         ) : (//it's false then give the start button
           <Button
             onClick={() => {
               setIsStarted(true);
             }}
+            color="secondary"
+            variant="contained"
+            sx={{width:"30%",minWidth:"200px",height:"60px",fontSize:"20px",margin:"30px auto"}}
           >
-            Başla
+            Start
           </Button>
         )
       }
