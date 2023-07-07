@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+}
+
+
+body{
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+    background: linear-gradient(45deg, #8e97f5, #f78ff1);
+    background-size: 400% 400%;
+
+    animation: colorful 28s ease infinite;
+
+    height: fit-content;
+    min-height: 100vh;
+}
+
+
+
+video{
+    margin-top: 20px;
+    width: 58vw;
+    height: auto;
+}
+
+p{
+    padding: 2vw;
+    margin: 50px 10vw 20px 10vw;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+
+@keyframes colorful {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
+}
+
+@media only screen and (max-width: 850px){
+    video{
+        width: 90vw;
+    }
+}
