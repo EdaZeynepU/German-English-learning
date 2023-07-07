@@ -1,3 +1,6 @@
+You can visit the presentation page with a video from here: https://edazeynepu.github.io/German-English-learning/presentation/GerEng.html
+<hr/>
+
 # React Project
 
 This is a React project bootstrapped with Vite.
